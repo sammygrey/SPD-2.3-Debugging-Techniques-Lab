@@ -15,7 +15,39 @@ _Then I noticed another bug ..._
 
 ## Exercise 1
 
-[[Your answer goes here!]]
+### startup site using flask per normal
+
+### when submitting a pizza order - TypeError: 'topping' is an invalid keyword argument for PizzaTopping, probably put topping instead of topping_type for the PizzTopping model
+
+### ctrl f for topping
+
+### error is on line 79 PizzaTopping(topping=topping_str) instead of PizzaTopping(topping_type=topping_str)
+
+### new error Could not build url for endpoint '/'. Did you mean 'fulfill_order' instead?, probably exactly what it says
+
+### have it redirect the url to home instead of / because thats nothing, but no past orders seem to show up now and no way to fulfill hmmmm
+
+### divide and conquer - look at database, app, and html rendering
+
+### html looks fine at a glance
+
+### check database.db as it has been created - looks fine
+
+### check app.py where orders are submitted - db is not committed lol
+
+### new error - NOT NULL constraint failed: pizza.order_name
+
+### looking at ouput crust type is fine but name and size dont seem to be non-null, look at html to see what these are actually called in the form
+
+### they are called order_name and pizza_size, not name and size, easy fix
+
+### pizzas show up but toppings are bugged
+
+### thing is we are taking in an array of toppings so we want to use getlist for order submission to grab from the form
+
+### we also dont wanna append all topping types to the pizza lol, also run this loop first so we can add them all when creating the object
+
+### fulfill button works, everything is in working order
 
 ## Exercise 2
 
