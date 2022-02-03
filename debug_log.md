@@ -73,4 +73,16 @@ _Then I noticed another bug ..._
 
 ## Exercise 3
 
-[[Your answer goes here!]]
+### this ones not a webapp its gonna be a lot faster lol
+
+### prints list of nums then list index out of range prolly an obo error, problem is in merge sort function
+
+### iterators in while loop with no bounds, bad idea for looping thru an array
+
+### added bounds for i and j, not needed for k, fixed error on line 38 calling right_side[i] when its iterator is j
+
+### new error is for binary search - list indices must be integers or slices, not float
+
+### just add double / to truncate when solving for midpoint
+
+### everything is now in working order, maybe add disclaimer that mergesort list is being sorted from high to low but not my job
