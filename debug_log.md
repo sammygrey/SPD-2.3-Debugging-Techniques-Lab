@@ -51,7 +51,25 @@ _Then I noticed another bug ..._
 
 ## Exercise 2
 
-[[Your answer goes here!]]
+### same as last time, run as intended first
+
+### internal server error upon submission - tracing error to /results with city
+
+### looking at home and results the city variable is referred to as city, not users_city, changing this
+
+### further errors regarding the city in the json but json works lets just print it - nothing to geolocate
+
+### problem with putting city in header, just put it in as part of the url as a query string
+
+### still error, probably stuff is called wrong from json, but printing the json we can see the correct way to call it
+
+### weather is fine, temp is part of main and called temp not temperature, humidity is fine, wind speed is fine, everything else is fine
+
+### new error ValueError: Invalid format string, this is a problem with date strf in the html
+
+### working backwards the problem seems to be with %-d which is now deprecated and %e has taken its place, same problem with %-I replaced with %H and %I respectively
+
+### everything else is in working order
 
 ## Exercise 3
 
